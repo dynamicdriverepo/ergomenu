@@ -3,7 +3,7 @@ An elegant jQuery menu control that takes a regular UL list and transforms it in
 
 Using the custom 'onselect' event handler, you can grab the selected menu item as a jQuery object to manipulate as you wish.
 
-![Simple CSS Button Hover Effects](css-submit-button-hover-effects.jpg?raw=true "Simple CSS Button Hover Effects")
+![Simple CSS Button Hover Effects](ergomenu.gif?raw=true "Simple CSS Button Hover Effects")
 
 ## Requirements ##
 
