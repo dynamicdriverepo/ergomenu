@@ -1,0 +1,56 @@
+<!doctype html>
+<head>
+<link rel="stylesheet" href="uldropdown.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="uldropdown.js">
+
+/***********************************************
+* Ergo List Drop Down Menu- By Jon Muller http://ergonomictrends.com
+* Visit http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+</script>
+
+<script>
+
+jQuery(function($){
+
+	dropdown1 = new uldropdown({
+			dropid: 'dropdown1', // id of menu DIV container
+			overlay: true, // true = drop down, false = expanding menu
+			onSelect($selected){ // when user selects a value
+				$('#output').val('Selected Text: ' + $selected.text() + '\n\n' + 'Selected Value: ' + $selected.attr('href'))
+				console.log($selected.text())
+			}
+	})
+
+})
+
+
+</script>
+</head>
+
+<body>
+<div id="dropdown1" class="uldropdown">
+  <div class="titletext">Select a Value</div>
+	<ul>
+		<li><a href="#chair1">Excellent Budget Ergonomic Chair with Adjustable L...</a></li>
+		<li><a href="#chair2">High End Ergonomic Chair with Price Conscious Pric...</a></li>
+		<li><a href="#chair3">Best Cushioned Budget Office Chair...</a></li>
+		<li><a href="#chair4">Lockable Reclining High Back Chair...</a></li>
+		<li><a href="#chair5">Long Lasting, Lightweight Ergonomic Office Chair...</a></li>
+		<li><a href="#chair6">Why you need an Ergonomic Chair...</a></li>
+		<li><a href="#chair7">Which is the Best Ergonomic Chair under $200?...</a></li>
+	</ul>
+</div>
+
+<textarea id="output" style="width: 90%;height:100px;margin-top:1em"></textarea>
+
+<p>
+<a href="#" onClick="dropdown1.expand(event); return false">Expand Menu</a> | 
+<a href="#" onClick="dropdown1.selectit(1); return false">Select First Menu Item</a> |
+<a href="#" onClick="dropdown1.unselect(); return false">Unselect Menu</a>
+</p>
+</body>
+
+</html>
