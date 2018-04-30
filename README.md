@@ -20,3 +20,5 @@ http://www.dynamicdrive.com/dynamicindex1/ergodropdown.htm
 ## License ##
 
 MIT
+
+Author Homepage: [Ergonomic Trends](http://ergonomictrends.com/)
